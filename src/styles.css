@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+
+@use "@angular/material" as mat;
+@include mat.core();
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    --primary-color: #cc0000;
+}
+
+/* Defining the primary palette */
+:root {
+    --mat-primary-main: #cc0000;
+    --mat-primary-lighter: #f0b3b3;
+    --mat-primary-darker: #b90000;
+    --mat-primary-200: #cc0000;
+
+    /* Contract palette */
+    --mat-primary-contrast-main: #ffffff;
+    --mat-primary-contrast-lighter: #000000;
+    --mat-primary-contrast-darker: #ffffff;
+}
+
+/* Defining the theme palettes */
+:root {
+    --theme-primary: var(--mat-primary-main);
+    --theme-accent: var(--mat-indigo-A200);
+}
+
+/* Defining the custom theme */
+:root {
+    --my-theme-primary: var(--theme-primary);
+    --my-theme-accent: var(--theme-accent);
+    --my-theme-typography: initial; /* Assuming mat.typography-config() returns some CSS */
+    --my-theme-density: 0;
+}
+
+/* Applying theme to all components */
+/* Implementation for this mixin needs to be provided or it needs to be replaced with appropriate CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+html , body {
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: Roboto , "Helvetica Neue", sans-serif;
+    --primary-color:#cc0000
+}
+
+$mat-primary:{
+    main:#cc0000;
+    lighter:#f0b3b3;
+    darker:#b90000;
+    200:#cc0000;
+
+
+    contract:(
+        main:#ffffff
+        lighter:#000000;
+        darker:#ffffff
+
+    ),
+};
+
+$theme-primary:mat.define-palette($mat-primary, main, lighter, darker);
+$theme-accent:mat.define-palette(mat.$indigo-palette, A200, A100, A400);
+
+$my-theme:mat.define-light-theme(
+    (
+        color:(
+            primary:$theme-primary,
+            accent:$theme-accent
+        ),
+        typography:mat.typography-config(),
+        density:0,
+        )
+)
+
+@include mat.all-component-thems($my-theme)
+
+*/
