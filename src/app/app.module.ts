@@ -16,7 +16,7 @@ import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { ContentComponent } from './pages/content/content.component';
 import { CommentsComponent } from './pages/comments/comments.component';
 
-MatListModule
+
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ MatListModule
     MatSlideToggleModule,
     BrowserAnimationsModule,
     MatListModule,
-    MatIconModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

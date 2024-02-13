@@ -33,6 +33,7 @@ export class CustomSidenavComponent {
       icon: 'video_library',
       lable:'Content',
       route:'content'
+   
     },
      {
       icon: 'analytics',

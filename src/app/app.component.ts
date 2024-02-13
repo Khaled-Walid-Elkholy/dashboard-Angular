@@ -1,5 +1,6 @@
 import { Component, Input, computed, signal } from '@angular/core';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavContainer, MatSidenavContent, MatSidenavModule } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
